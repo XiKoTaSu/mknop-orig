@@ -73,9 +73,9 @@ jobs:
           sudo apt-get autoremove --purge -y
           sudo apt-get clean
 
-      - name: Clone Lean's openwrt
+      - name: Clone openwrt
         run: |
-          git clone https://github.com/coolsnowwolf/lede
+          git clone https://github.com/coolsnowwolf/lede.git
 
       - name: Install feeds
         run: |
