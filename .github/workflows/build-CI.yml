@@ -70,10 +70,8 @@ jobs:
           msmtp \
           uglifyjs \
           antlr3
-
-# 清理
-sudo apt-get autoremove --purge -y
-sudo apt-get clean
+          sudo apt-get autoremove --purge -y
+          sudo apt-get clean
 
       - name: Clone Lean's openwrt
         run: |
